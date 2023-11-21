@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: cute;
+    src: url(media/Cute\ Apricot.ttf);
+}
+
+body{
+    background-color: #d9b79a;
+}
+
+nav{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #d9b79a;
+    width: 100%;
+    height: fit-content;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    overflow: hidden;
+}
+nav a{
+    display: inline-flex;
+    position: relative;
+    color: #40342b;
+    background-color: #ecddd0;
+    padding: 10px;
+    border: 2px solid #bb9d84;
+    border-radius: 5px; 
+    font-family: cute;
+    text-decoration: none;
+    letter-spacing: 1px; 
+    top: 23%;
+}
+
+footer{
+    background-color: #d9b79a;
+    height: 100%;
+    overflow: hidden;
+}
+
+.icon{
+    position: relative;
+    left: 1%;
+    display: inline-flex;
+    background: url(media/sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    top: 2px;
+}
+.icon a{
+    width: 66px;
+    height: 63px;
+    border: 2px solid #a3866d;
+    border-radius: 5px;
+}
+
+.dropd img{
+    width: 90px;
+}
+
+@media screen and (max-width: 640px){
+    dropd{
+        background-color: #f1d9c4;
+        color: white;
+        padding: 1vw;
+        font-size: 16px;
+        border: none;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdc{
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px #7d5764;
+        z-index: 1;
+    }
+    .dropdc a{
+        color: #4d323b;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdc a:hover {background-color: #f1d9c4;}
+    .dropdown:hover .dropdc {display: block;}
+    .dropdown:hover .dropd {background-color: #d9b79a;}
+}
+
+#heart{
+    background-position: -587px -221px;
+}
+
+#star{
+    background-position: -587px -146px;
+}
+
+#pinterest{
+    background-position: -141px -221px;
+}
+
+#camera{
+    background-position: -290px -221px;
+}
+
+
+
+video{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+body{min-height: 100vh;}
+header{min-height: 50px;}
+footer{min-height: 50px;}
+body{display: flex; flex-direction: column;}
+article{flex: 1;}
